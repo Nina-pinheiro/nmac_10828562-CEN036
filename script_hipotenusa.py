@@ -2,14 +2,10 @@
 import sys
 import math 
 
-# O usuário colocam números inteiros na linha de comando
-x = (sys.argv[1])
-y = (sys.argv[2])
-
-# Verificando se os valores são inteiros 
+# Verificando se os valores são inteiros e pedindo para o usuário colocar os argumentos na linha de comando
 try:
-    x = int(x)
-    y = int(y)
+    x = int(sys.argv[1])
+    y = int(sys.argv[2])
 except ValueError:
     print("Por favor, informe apenas números inteiros")
     sys.exit(1)
@@ -22,7 +18,7 @@ if x > 0  and y > 0:
         print("Está correto")
 # Realizar a equação - teorema de pitagoras
         z = math.sqrt(x**2 + y**2)
-        # Printar o valor de z
+        # Printar o valor de z -valor calculado do quadrado da Hipotenusa
         print(" O valor de z é " , z)
     else:
         print("Por favor, digite números menores que 1000") 
