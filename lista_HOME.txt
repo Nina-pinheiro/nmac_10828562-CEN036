@@ -1,0 +1,5 @@
+total 6
+-rw-r--r-- 1 Nina 197121 266 out  2 21:40 bash_script.sh
+-rw-r--r-- 1 Nina 197121   0 out  2 21:41 lista_HOME.txt
+-rw-r--r-- 1 Nina 197121  14 set 30 21:39 script_cDNA.py
+-rw-r--r-- 1 Nina 197121 941 out  1 22:33 script_hipotenusa.py
