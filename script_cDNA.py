@@ -4,7 +4,7 @@ import sys
 # Argumentos da Linha de comando
 sequencia_dna  = sys.argv[1]
 
-# Verificando se a sequência é uma str
+# Verificando se não há números na sequência de DNA
 print(sequencia_dna.isalpha())
 
 
@@ -19,24 +19,23 @@ try:
     n3 = int(sys.argv[4])
     n4 = int(sys.argv[5])
 except ValueError:
-    print("Por favor insira valores in
-    teiros")
+    print("Por favor insira valores inteiros")
     sys.exit(1)
 
 # Criando uma variável para evitar que chame a função len o tempo todo
-x= len(sequencia_dna)
+tamanho_sequencia = len(sequencia_dna)
 
 # Verificar se os nuúmeros inseridos são menores que a sequência de DNA
-if n1> x:
+if n1 > tamanho_sequencia:
     print("O valor de n1 é maior que o tamanho da sequencia de Dna, por favor, insira um valor menor")
     exit()
-elif n2 > x:
+elif n2 > tamanho_sequencia:
     print("O valor de n2 é maior que o tamanho da sequencia de Dna, por favor, insira um valor menor")
     exit()
-elif n3 > x:
+elif n3 > tamanho_sequencia:
     print("O valor de n3 é maior que o tamanho da sequencia de Dna, por favor, insira um valor menor")
     exit()
-elif n4 > x:
+elif n4 > tamanho_sequencia:
     print("O valor de n4 é maior que o tamanho da sequencia de Dna, por favor, insira um valor menor")
     exit()
 else:
