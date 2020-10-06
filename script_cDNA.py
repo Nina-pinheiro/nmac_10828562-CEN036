@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # Importar Biblioteca necessária
 import sys
 
