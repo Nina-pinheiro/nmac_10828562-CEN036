@@ -19,7 +19,7 @@ for i in ['A', 'T', 'C', 'G']:
     for a in  ['A', 'T', 'C', 'G']:
       cont[i+j+a] = 0
 
-# Loop para a leitura dos trinucleotídeos
+# Loop para a contagem dos trinucleotídeos
 sequencia=sequencia[0]
 for k in range(len(sequencia)-2):
   cont[sequencia[k]+sequencia[k+1]+sequencia[k+2]] += 1
